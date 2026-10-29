@@ -58,6 +58,7 @@ Ticket ──► Guardrail input (validazione, mascheramento dati personali)
 ```
 ├── app.py                      # demo Streamlit
 ├── SINOSSI.md / .docx          # sinossi del progetto
+├── presentazione.pptx          # slide per la presentazione
 ├── notebooks/
 │   └── helpdesk_copilot.ipynb  # EDA, modelli, valutazione (con output)
 ├── src/
