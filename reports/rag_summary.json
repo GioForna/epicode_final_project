@@ -1,0 +1,8 @@
+{
+  "n_ticket_valutati": 500.0,
+  "hit_at_1": 0.794,
+  "hit_at_5": 0.872,
+  "knn_accuracy": 0.558,
+  "similarita_media_top1": 0.9105745553970337,
+  "quota_sotto_soglia": 0.0
+}

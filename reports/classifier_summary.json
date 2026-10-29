@@ -1,0 +1,7 @@
+{
+  "best_model": "Rete neurale (MLP)",
+  "accuracy": 0.6877869605142333,
+  "f1_macro": 0.6962630232966168,
+  "f1_weighted": 0.6863250588650865,
+  "tempo_training_s": 457.7
+}
