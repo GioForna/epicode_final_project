@@ -1,12 +1,13 @@
 """Guardrail: mascheramento dati personali e controlli di input."""
 import re
 
+# l'ordine conta: l'IP va prima del telefono, altrimenti "192.168.1.10" verrebbe preso come numero
 PII_PATTERNS = {
+    "<IP>": re.compile(r"\b(?:\d{1,3}\.){3}\d{1,3}\b"),
     "<EMAIL>": re.compile(r"[\w.+-]+@[\w-]+\.[\w.-]+"),
     "<IBAN>": re.compile(r"\b[A-Z]{2}\d{2}[A-Z0-9]{11,30}\b"),
     "<CARTA>": re.compile(r"\b(?:\d[ -]?){13,16}\b"),
     "<TELEFONO>": re.compile(r"(?<!\w)\+?\d[\d\s().-]{7,}\d"),
-    "<IP>": re.compile(r"\b(?:\d{1,3}\.){3}\d{1,3}\b"),
 }
 
 MIN_CHARS = 20
